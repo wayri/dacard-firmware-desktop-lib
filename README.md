@@ -17,6 +17,10 @@ The python program uses **pyserial library** for acquiring data over USB and the
 - Also look up STM32F103C8Tx datasheet
 - Also look at the DACard-Basic repo for visual reference
 
+### Contributing
+If you would like to discuss some part of code, create an `issue`
+If you would like to contribute some code, create a `pull request`
+
 ### Contact
 
 You can contact me directly for now

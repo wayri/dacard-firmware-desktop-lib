@@ -1,0 +1,15 @@
+DAC-Basic Firmware is shared from the DAC-XCore. 
+
+Firmware | Features
+
+Handlers for operating using commands
+
+	+ Serial Command Parser
+	+ Internal state flags
+	+ Pin state control
+	+ Gain control signals
+
+Handlers for data
+
+	+ Internal mini_data buffer
+	+ Sending data of pins which are acquiring data as requested from the desktop commands using serial

@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yawar b, v, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\YAWAR\Documents\projects\DACard-basic\Software\Firmata\MDK-ARM\Firmata.uvprojx
+Project File Date:  03/24/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Firmata'
+assembling startup_stm32f103xb.s...
+compiling usbd_desc.c...
+compiling usbd_conf.c...
+compiling usb_device.c...
+compiling main.c...
+../Src/main.c(181): warning:  #223-D: function "CDC_Transmit_FS" declared implicitly
+  		CDC_Transmit_FS((uint8_t *) dacb_sb, sizeof(dacb_sb));
+../Src/main.c(107): warning:  #177-D: variable "sw_tct_state"  was declared but never referenced
+  	char sw_tct_state = 0;		//tactile switch value
+../Src/main.c(113): warning:  #177-D: variable "I_sens"  was declared but never referenced
+  	uint16_t I_sens = 0;			//Current sensor value buffer
+../Src/main.c(114): warning:  #177-D: variable "V_sens"  was declared but never referenced
+  	uint16_t V_sens = 0;			//Voltage sensor value buffer
+../Src/main.c(116): warning:  #177-D: variable "dip6_ibuff"  was declared but never referenced
+  	char dip6_ibuff[6] = {0};
+../Src/main.c(118): warning:  #177-D: variable "pwm_con"  was declared but never referenced
+  	short int pwm_con[4] = {0};	//This array holds PWM control values -> ON/OFF, frequency premuls, independent/phases(1,2,3), duty 
+../Src/main.c(124): warning:  #177-D: variable "flg_f"  was declared but never referenced
+  	char flg_f[6] = {0};
+../Src/main.c(126): warning:  #177-D: variable "flg_c"  was declared but never referenced
+  	char flg_c[6] = {0};
+../Src/main.c: 8 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling usbd_cdc_if.c...
+compiling stm32f1xx_hal_pcd_ex.c...
+compiling stm32f1xx_hal_pcd.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_ll_usb.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling usbd_core.c...
+compiling system_stm32f1xx.c...
+compiling usbd_ctlreq.c...
+compiling usbd_ioreq.c...
+compiling usbd_cdc.c...
+linking...
+Program Size: Code=14324 RO-data=284 RW-data=364 ZI-data=5980  
+FromELF: creating hex file...
+"Firmata\Firmata.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Firmata
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:33
+</pre>
+</body>
+</html>
